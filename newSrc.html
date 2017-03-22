@@ -1,0 +1,83 @@
+
+<html lang="en-us">
+
+	<head>
+		 <meta charset="UTF-8">
+		 <title>SOUND TOWN</title>
+
+		  <!-- Bootstrap -->
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC" rel="stylesheet">
+		<script src="/path/to/masonry.pkgd.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="newSrc.css">
+
+	</head>
+
+	<body>
+		
+		<div id="container">
+			<section id="banner">
+	
+				<div class="jumbotron">
+		 			<h1>It's time to face the music</h1>
+		 			<p>Discovering and experiencing local music </p>
+		 			
+
+					 <!-- Artist Select Box -->
+					  <form id="artist-form">
+					    <!-- Label for Text Box -->
+					    <label for="artist-input">Choose Your Artist</label>
+					    <!-- Text Input Box -->
+					    <input type="text" id="artist-input"><br>
+					    <!-- Submit Button -->
+					    <input id="select-artist" type="submit" value="GO!">
+					  </form>
+			
+				</div><!--/.jumboton-->
+			</section>
+<!-- 
+			<section id="tiles"> 
+					<div class="grid">
+					 <div class="grid-item"><img src="assets/images/acdc.jpeg"></div>
+					 <div class="grid-item grid-item-width2"><img src="assets/images/beat.jpeg"></div>
+					 <div class="grid-item"><img src="assets/images/mjbad.jpeg"></div>
+				</div>
+			</section> -->
+
+		</div> <!-- /. container-->
+
+	<!-- This is an example of a welcoming prompt -->	
+	<!-- <div id="welcome">
+		<h3>Welcome to SoundTown</h3>
+		<div id="type">To begin discovering local music you'll love, simply click on an artist to hear their most popular songs. Change the town and genre to discover even more! Click the artist picture to visit their page.</div>
+	</div>	 -->
+
+		<!-- this is the artist's music player -->	
+	<div id="player">
+		<div class="media">
+  			<div class="media-left media-middle"></div>
+  			
+  				<div class="media-body">
+
+	  				<!-- this is the div to dump band name into -->	
+	    			<div id="bandName">Band Name Goes Here</div>
+	    			
+	    			<!-- this is the div to dump tracks -->	
+					<div id="tracks">
+						 <div id="player-div"></div>
+					</div>
+				
+			<!-- closes media body -->	
+  			</div>
+  		<!-- closes media -->	
+		</div>
+	<!-- closes player -->	
+	</div>
+
+</body>
+<script src="https://www.gstatic.com/firebasejs/3.7.3/firebase.js"></script>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script type="text/javascript" src="newSrc.js"></script>
+
+</html>
